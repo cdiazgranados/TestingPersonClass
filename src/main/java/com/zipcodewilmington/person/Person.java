@@ -11,19 +11,23 @@ public class Person {
         this.name = "";
         this.age = Integer.MAX_VALUE;
 
+        //also can be written as
+
+        //setName("");
+        //setAge(Integer.MAX_VALUE);
     }
 
     public Person(int age) {
-        this.age = age;
+        setAge(age);
     }
 
     public Person(String name) {
-        this.name = name;
+        setName(name);
     }
 
     public Person(String name, int age) {
-        this.age = age;
-        this.name = name;
+        setName(name);
+        setAge(age);
     }
 
     public void setName(String name) {
@@ -35,10 +39,10 @@ public class Person {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public Integer getAge() {
-        return this.age;
+        return age;
     }
 }
